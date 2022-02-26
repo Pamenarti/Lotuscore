@@ -275,23 +275,19 @@ bool CWallet::LoadWatchOnly(const CScript &dest)
 bool CWallet::Unlock(const SecureString& strWalletPassphrase)
 {
 
-    LogPrintf("We are in UnLock call in wallet.cpp");
     CCrypter crypter;
     CKeyingMaterial vMasterKey;
 
-    LogPrintf("We are in UnLock call in wallet.cpp about to go for it");
     {
         LOCK(cs_wallet);
         BOOST_FOREACH(const MasterKeyMap::value_type& pMasterKey, mapMasterKeys)
         {
         
-            LogPrintf("We are in boost foreach UnLock call");
             if(!crypter.SetKeyFromPassphrase(strWalletPassphrase, pMasterKey.second.vchSalt, pMasterKey.second.nDeriveIterations, pMasterKey.second.nDerivationMethod)) {
                 
-                LogPrintf("wetKeyFromAPassphrase worked or something");
                 return false;
             }
-            LogPrntf("We are outside of crypter call now");
+            
             
             if (!crypter.Decrypt(pMasterKey.second.vchCryptedKey, vMasterKey))
                 continue; // try another master key
