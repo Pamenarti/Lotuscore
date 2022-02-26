@@ -1923,23 +1923,29 @@ UniValue walletpassphrase(const UniValue& params, bool fHelp)
     if (!pwalletMain->IsCrypted())
         throw JSONRPCError(RPC_WALLET_WRONG_ENC_STATE, "Error: running with an unencrypted wallet, but walletpassphrase was called.");
 
+    LogPrintf("made it here yo alalalala");
     // Note that the walletpassphrase is stored in params[0] which is not mlock()ed
     SecureString strWalletPass;
     strWalletPass.reserve(100);
     // TODO: get rid of this .c_str() by implementing SecureString::operator=(std::string)
     // Alternately, find a way to make params[0] mlock()'d to begin with.
     strWalletPass = params[0].get_str().c_str();
-
+    LogPrintf(" strWalletPass %s", strWalletPass);
+    LogPrintf("made it here yo bababa lalalala");
     if (strWalletPass.length() > 0)
     {
-        if (!pwalletMain->Unlock(strWalletPass))
+        LogPrintf("strWalletPass.length > 0 found");
+        if (!pwalletMain->Unlock(strWalletPass)) 
             throw JSONRPCError(RPC_WALLET_PASSPHRASE_INCORRECT, "Error: The wallet passphrase entered was incorrect.");
     }
-    else
+    else {
+    	LogPrintf("We are here about to throw an error");
         throw runtime_error(
             "walletpassphrase <passphrase> <timeout>\n"
             "Stores the wallet decryption key in memory for <timeout> seconds.");
+    }
 
+    LogPrintf("made it here yo cacacac  alalalala");
     pwalletMain->TopUpKeyPool();
 
     int64_t nSleepTime = params[1].get_int64();

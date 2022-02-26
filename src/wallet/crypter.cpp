@@ -47,6 +47,8 @@ bool CCrypter::SetKeyFromPassphrase(const SecureString& strKeyData, const std::v
         return false;
 
     int i = 0;
+    
+    
     if (nDerivationMethod == 0)
         i = BytesToKeySHA512AES(chSalt, strKeyData, nRounds, chKey, chIV);
 
