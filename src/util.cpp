@@ -99,8 +99,8 @@ namespace boost {
 
 using namespace std;
 
-const char * const BITCOIN_CONF_FILENAME = "woodcoin.conf";
-const char * const BITCOIN_PID_FILENAME = "woodcoin.pid";
+const char * const BITCOIN_CONF_FILENAME = "lotuscoin.conf";
+const char * const BITCOIN_PID_FILENAME = "lotuscoin.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -435,7 +435,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "woodcoin";
+    const char* pszModule = "lotuscoin";
 #endif
     if (pex)
         return strprintf(
@@ -461,7 +461,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Woodcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Lotuscoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -471,10 +471,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Woodcoin";
+    return pathRet / "Library/Application Support/Lotuscoin";
 #else
     // Unix
-    return pathRet / ".woodcoin";
+    return pathRet / ".lotuscoin";
 #endif
 #endif
 }

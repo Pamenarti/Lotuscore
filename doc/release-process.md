@@ -21,12 +21,12 @@ Before every major release:
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/woodcoin-project/gitian.sigs.ltc.git
-    git clone https://github.com/woodcoin-project/woodcoin-detached-sigs.git
+    git clone https://github.com/lotuscoin-project/gitian.sigs.ltc.git
+    git clone https://github.com/lotuscoin-project/lotuscoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/woodcoin-project/woodcoin.git
+    git clone https://github.com/lotuscoin-project/lotuscoin.git
 
-### Woodcoin maintainers/release engineers, update version in sources
+### Lotuscoin maintainers/release engineers, update version in sources
 
 Update the following:
 
@@ -63,7 +63,7 @@ Tag version (or release candidate) in git
 
 Setup Gitian descriptors:
 
-    pushd ./woodcoin
+    pushd ./lotuscoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -97,7 +97,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../woodcoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../lotuscoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -105,49 +105,49 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url woodcoin=/path/to/woodcoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url lotuscoin=/path/to/lotuscoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Woodcoin Core for Linux, Windows, and OS X:
+### Build and sign Lotuscoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit woodcoin=v${VERSION} ../woodcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../woodcoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/woodcoin-*.tar.gz build/out/src/woodcoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit lotuscoin=v${VERSION} ../lotuscoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../lotuscoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/lotuscoin-*.tar.gz build/out/src/lotuscoin-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit woodcoin=v${VERSION} ../woodcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../woodcoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/woodcoin-*-win-unsigned.tar.gz inputs/woodcoin-win-unsigned.tar.gz
-    mv build/out/woodcoin-*.zip build/out/woodcoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit lotuscoin=v${VERSION} ../lotuscoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../lotuscoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/lotuscoin-*-win-unsigned.tar.gz inputs/lotuscoin-win-unsigned.tar.gz
+    mv build/out/lotuscoin-*.zip build/out/lotuscoin-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit woodcoin=v${VERSION} ../woodcoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../woodcoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/woodcoin-*-osx-unsigned.tar.gz inputs/woodcoin-osx-unsigned.tar.gz
-    mv build/out/woodcoin-*.tar.gz build/out/woodcoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit lotuscoin=v${VERSION} ../lotuscoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../lotuscoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/lotuscoin-*-osx-unsigned.tar.gz inputs/lotuscoin-osx-unsigned.tar.gz
+    mv build/out/lotuscoin-*.tar.gz build/out/lotuscoin-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`woodcoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`woodcoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`woodcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `woodcoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`woodcoin-${VERSION}-osx-unsigned.dmg`, `woodcoin-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`lotuscoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`lotuscoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`lotuscoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `lotuscoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`lotuscoin-${VERSION}-osx-unsigned.dmg`, `lotuscoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring
 
-    gpg --import woodcoin/contrib/gitian-keys/*.pgp
+    gpg --import lotuscoin/contrib/gitian-keys/*.pgp
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../woodcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../woodcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../woodcoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../lotuscoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../lotuscoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../lotuscoin/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -165,25 +165,25 @@ Commit your signature to gitian.sigs.ltc:
 Wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [woodcoin-detached-sigs](https://github.com/woodcoin-project/woodcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [lotuscoin-detached-sigs](https://github.com/lotuscoin-project/lotuscoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../woodcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../woodcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../woodcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/woodcoin-osx-signed.dmg ../woodcoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../lotuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../lotuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../lotuscoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/lotuscoin-osx-signed.dmg ../lotuscoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../woodcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../woodcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../woodcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/woodcoin-*win64-setup.exe ../woodcoin-${VERSION}-win64-setup.exe
-    mv build/out/woodcoin-*win32-setup.exe ../woodcoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../lotuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../lotuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../lotuscoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/lotuscoin-*win64-setup.exe ../lotuscoin-${VERSION}-win64-setup.exe
+    mv build/out/lotuscoin-*win32-setup.exe ../lotuscoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -205,23 +205,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-woodcoin-${VERSION}-aarch64-linux-gnu.tar.gz
-woodcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-woodcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-woodcoin-${VERSION}-x86_64-linux-gnu.tar.gz
-woodcoin-${VERSION}-osx64.tar.gz
-woodcoin-${VERSION}-osx.dmg
-woodcoin-${VERSION}.tar.gz
-woodcoin-${VERSION}-win32-setup.exe
-woodcoin-${VERSION}-win32.zip
-woodcoin-${VERSION}-win64-setup.exe
-woodcoin-${VERSION}-win64.zip
+lotuscoin-${VERSION}-aarch64-linux-gnu.tar.gz
+lotuscoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+lotuscoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+lotuscoin-${VERSION}-x86_64-linux-gnu.tar.gz
+lotuscoin-${VERSION}-osx64.tar.gz
+lotuscoin-${VERSION}-osx.dmg
+lotuscoin-${VERSION}.tar.gz
+lotuscoin-${VERSION}-win32-setup.exe
+lotuscoin-${VERSION}-win32.zip
+lotuscoin-${VERSION}-win64-setup.exe
+lotuscoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the woodcoin.org server, nor put them in the torrent*.
+space *do not upload these to the lotuscoin.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -231,23 +231,23 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the woodcoin.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the lotuscoin.org server.
 
-- Update woodcoin.org version
+- Update lotuscoin.org version
 
 - Announce the release:
 
-  - woodcoin-dev mailing list
+  - lotuscoin-dev mailing list
 
-  - Woodcoin Core announcements list https://groups.google.com/forum/#!forum/woodcoin-dev
+  - Lotuscoin Core announcements list https://groups.google.com/forum/#!forum/lotuscoin-dev
 
-  - blog.woodcoin.org blog post
+  - blog.lotuscoin.org blog post
 
-  - woodcointalk.io forum announcement
+  - lotuscointalk.io forum announcement
 
-  - Update title of #woodcoin on Freenode IRC
+  - Update title of #lotuscoin on Freenode IRC
 
-  - Optionally twitter, reddit /r/Woodcoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Lotuscoin, ... but this will usually sort out itself
 
   - Add release notes for the new version to the directory `doc/release-notes` in git master
 

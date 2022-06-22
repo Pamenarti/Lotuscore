@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-Woodcoin Core has an internal benchmarking framework, with benchmarks
+Lotuscoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling woodcoin-core, the benchmarks can be run with:
-`src/bench/bench_woodcoin`
+After compiling lotuscoin-core, the benchmarks can be run with:
+`src/bench/bench_lotuscoin`
 
 The output will look similar to:
 ```

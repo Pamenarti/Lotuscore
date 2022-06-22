@@ -86,8 +86,8 @@
         <translation>Změnit heslo k šifrování peněženky</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>&amp;File</source>

@@ -166,8 +166,8 @@
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
-        <source>Send coins to a Woodcoin address</source>
-        <translation>Gửi coins đến tài khoản Woodcoin</translation>
+        <source>Send coins to a Lotuscoin address</source>
+        <translation>Gửi coins đến tài khoản Lotuscoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -186,8 +186,8 @@
         <translation>&amp;Tin nhắn xác thực</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -214,12 +214,12 @@
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
-        <source>Sign messages with your Woodcoin addresses to prove you own them</source>
-        <translation>Dùng địa chỉ Woodcoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+        <source>Sign messages with your Lotuscoin addresses to prove you own them</source>
+        <translation>Dùng địa chỉ Lotuscoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Woodcoin addresses</source>
-        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Woodcoin xác định.</translation>
+        <source>Verify messages to ensure they were signed with specified Lotuscoin addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Lotuscoin xác định.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -238,8 +238,8 @@
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and woodcoin: URIs)</source>
-        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Woodcoin: URLs)</translation>
+        <source>Request payments (generates QR codes and lotuscoin: URIs)</source>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Lotuscoin: URLs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -250,8 +250,8 @@
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
-        <source>Open a woodcoin: URI or payment request</source>
-        <translation>Mở woodcoin:URL hoặc yêu cầu thanh toán</translation>
+        <source>Open a lotuscoin: URI or payment request</source>
+        <translation>Mở lotuscoin:URL hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -533,8 +533,8 @@
         <translation>Ví</translation>
     </message>
     <message>
-        <source>Connect to the Woodcoin network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến máy chủ Woodcoin thông qua SOCKS5 proxy.</translation>
+        <source>Connect to the Lotuscoin network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ Lotuscoin thông qua SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1008,8 +1008,8 @@
         <translation>Lựa chọn:</translation>
     </message>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoin Core</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoin Core</translation>
     </message>
     <message>
         <source>(default: %u)</source>

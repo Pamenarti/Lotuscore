@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Woodcoin tests.
+Utilities to generate test vectors for the data-driven Lotuscoin tests.
 
 Usage: 
 

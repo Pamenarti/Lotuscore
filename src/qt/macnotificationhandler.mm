@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.woodcoin.Woodcoin-Qt";
+        return @"org.lotuscoin.Lotuscoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

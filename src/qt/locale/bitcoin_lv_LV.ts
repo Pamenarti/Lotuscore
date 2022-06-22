@@ -142,8 +142,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Woodcoin address</source>
-        <translation>Nosūtīt bitkoinus uz Woodcoin adresi</translation>
+        <source>Send coins to a Lotuscoin address</source>
+        <translation>Nosūtīt bitkoinus uz Lotuscoin adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Woodcoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Woodcoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your Lotuscoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām Lotuscoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Woodcoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Woodcoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified Lotuscoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Lotuscoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,12 +218,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and woodcoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un woodcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and lotuscoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un lotuscoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a woodcoin: URI or payment request</source>
-        <translation>Atvērt woodcoin URI vai maksājuma pieprasījumu</translation>
+        <source>Open a lotuscoin: URI or payment request</source>
+        <translation>Atvērt lotuscoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -504,15 +504,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt woodcoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt lotuscoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Woodcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Woodcoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the Lotuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt Lotuscoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -564,7 +564,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Woodcoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt Lotuscoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -598,8 +598,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Woodcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Woodcoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lotuscoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Lotuscoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -850,7 +850,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Woodcoin Kontroles Funkcijas</translation>
+        <translation>Lotuscoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1029,8 +1029,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Woodcoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Woodcoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this Lotuscoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Lotuscoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1126,8 +1126,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoin Core</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

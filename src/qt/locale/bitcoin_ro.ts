@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Woodcoin address</source>
-        <translation>Trimite monedele către o adresă Woodcoin</translation>
+        <source>Send coins to a Lotuscoin address</source>
+        <translation>Trimite monedele către o adresă Lotuscoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Woodcoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Woodcoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Lotuscoin addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Lotuscoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Woodcoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Woodcoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Lotuscoin addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Lotuscoin specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and woodcoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și woodcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and lotuscoin: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și lotuscoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a woodcoin: URI or payment request</source>
-        <translation>Deschide un woodcoin: URI sau cerere de plată</translation>
+        <source>Open a lotuscoin: URI or payment request</source>
+        <translation>Deschide un lotuscoin: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -746,8 +746,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoin Core</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoin Core</translation>
     </message>
     <message>
         <source>Information</source>

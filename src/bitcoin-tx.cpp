@@ -56,10 +56,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s woodcoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s lotuscoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  woodcoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded woodcoin transaction") + "\n" +
-              "  woodcoin-tx [options] -create [commands]   " + _("Create hex-encoded woodcoin transaction") + "\n" +
+              "  lotuscoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded lotuscoin transaction") + "\n" +
+              "  lotuscoin-tx [options] -create [commands]   " + _("Create hex-encoded lotuscoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

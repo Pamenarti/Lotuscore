@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Woodcoin"
-            VALUE "FileDescription",    "woodcoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "Lotuscoin"
+            VALUE "FileDescription",    "lotuscoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "woodcoin-cli"
+            VALUE "InternalName",       "lotuscoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "woodcoin-cli.exe"
-            VALUE "ProductName",        "woodcoin-cli"
+            VALUE "OriginalFilename",   "lotuscoin-cli.exe"
+            VALUE "ProductName",        "lotuscoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

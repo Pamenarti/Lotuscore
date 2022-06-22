@@ -232,7 +232,7 @@ checking for lrelease... /usr/lib/x86_64-linux-gnu/qt5/bin/lrelease
 checking for lupdate-qt5... no
 checking for lupdate5... no
 checking for lupdate... /usr/lib/x86_64-linux-gnu/qt5/bin/lupdate
-checking whether to build Woodcoin Core GUI... yes (Qt5)
+checking whether to build Lotuscoin Core GUI... yes (Qt5)
 checking for boostlib >= 1.47.0... yes
 checking whether the Boost::System library is available... yes
 checking for exit in -lboost_system... yes
@@ -255,14 +255,14 @@ checking for EVENT... yes
 checking for EVENT_PTHREADS... yes
 checking for ZMQ... yes
 checking for protoc... no
-checking whether to build woodcoind... yes
-checking whether to build utils (woodcoin-cli woodcoin-tx)... yes
+checking whether to build lotuscoind... yes
+checking whether to build utils (lotuscoin-cli lotuscoin-tx)... yes
 checking whether to build libraries... yes
 checking if ccache should be used... no
 checking if wallet should be enabled... yes
 checking whether to build with support for UPnP... yes
 checking whether to build with UPnP enabled by default... no
-checking whether to build test_woodcoin... yes
+checking whether to build test_lotuscoin... yes
 checking whether to reduce exports... no
 checking that generated files are newer than configure... done
 configure: creating ./config.status

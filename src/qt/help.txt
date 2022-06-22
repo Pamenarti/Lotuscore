@@ -1,6 +1,6 @@
-Woodcoin Core version v0.13.2.0-7e24b653e (64-bit)
+Lotuscoin Core version v0.13.2.0-7e24b653e (64-bit)
 Usage:
-  woodcoin-qt [command-line options]                     
+  lotuscoin-qt [command-line options]                     
 
 Options:
 
@@ -25,7 +25,7 @@ Options:
        How thorough the block verification of -checkblocks is (0-4, default: 3)
 
   -conf=<file>
-       Specify configuration file (default: woodcoin.conf)
+       Specify configuration file (default: lotuscoin.conf)
 
   -datadir=<dir>
        Specify data directory
@@ -51,7 +51,7 @@ Options:
        leave that many cores free, default: 0)
 
   -pid=<file>
-       Specify pid file (default: woodcoin.pid)
+       Specify pid file (default: lotuscoin.pid)
 
   -prune=<n>
        Reduce storage requirements by pruning (deleting) old blocks. This mode

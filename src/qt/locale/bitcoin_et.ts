@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Woodcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Woodcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Lotuscoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Lotuscoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Woodcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Woodcoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your Lotuscoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu Lotuscoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -286,8 +286,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Woodcoin address</source>
-        <translation>Saada münte Woodcoini aadressile</translation>
+        <source>Send coins to a Lotuscoin address</source>
+        <translation>Saada münte Lotuscoini aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -310,8 +310,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -338,12 +338,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Woodcoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Woodcoini aadressiga</translation>
+        <source>Sign messages with your Lotuscoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Lotuscoini aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Woodcoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Woodcoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Lotuscoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Lotuscoini aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -362,20 +362,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and woodcoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja woodcoini: URId)</translation>
+        <source>Request payments (generates QR codes and lotuscoin: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja lotuscoini: URId)</translation>
     </message>
     <message>
-        <source>Open a woodcoin: URI or payment request</source>
-        <translation>Ava woodcoini: URI või maksepäring</translation>
+        <source>Open a lotuscoin: URI or payment request</source>
+        <translation>Ava lotuscoini: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Woodcoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Woodcoini võrku</numerusform><numerusform>%n aktiivset ühendust Woodcoini võrku</numerusform></translation>
+        <source>%n active connection(s) to Lotuscoin network</source>
+        <translation><numerusform>%n aktiivne ühendus Lotuscoini võrku</numerusform><numerusform>%n aktiivset ühendust Lotuscoini võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -710,8 +710,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Woodcoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Woodcoin aadress.</translation>
+        <source>The entered address "%1" is not a valid Lotuscoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Lotuscoin aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -825,8 +825,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Woodcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Woodcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Lotuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Lotuscoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -908,7 +908,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Woodcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lotuscoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1375,8 +1375,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Woodcoin address</source>
-        <translation>Hoiatus: Ebakorrektne Woodcoin aadress</translation>
+        <source>Warning: Invalid Lotuscoin address</source>
+        <translation>Hoiatus: Ebakorrektne Lotuscoin aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1455,8 +1455,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Woodcoin address to sign the message with</source>
-        <translation>Woodcoin aadress millega sõnum allkirjastada</translation>
+        <source>The Lotuscoin address to sign the message with</source>
+        <translation>Lotuscoin aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1487,8 +1487,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Woodcoin address</source>
-        <translation>Allkirjasta sõnum Woodcoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Lotuscoin address</source>
+        <translation>Allkirjasta sõnum Lotuscoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1507,12 +1507,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Woodcoin address the message was signed with</source>
-        <translation>Woodcoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The Lotuscoin address the message was signed with</source>
+        <translation>Lotuscoin aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Woodcoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Woodcoin aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Lotuscoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Lotuscoin aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1800,8 +1800,8 @@
         <translation>Luba välisühendusi (vaikeväärtus: 1 kui puudub -proxy või -connect)</translation>
     </message>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoini tuumik</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoini tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

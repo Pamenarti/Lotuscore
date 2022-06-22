@@ -94,8 +94,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -438,8 +438,8 @@
         <translation>Opsionet:</translation>
     </message>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Berthama Woodcoin</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Berthama Lotuscoin</translation>
     </message>
     <message>
         <source>Information</source>

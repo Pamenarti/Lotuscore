@@ -1409,7 +1409,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Woodcoin " + FormatFullVersion();
+        std::string strDesc = "Lotuscoin " + FormatFullVersion();
 
         try {
             while (true) {

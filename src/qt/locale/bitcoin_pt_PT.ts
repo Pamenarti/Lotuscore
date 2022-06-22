@@ -174,8 +174,8 @@
         <translation>A reindexar os blocos no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Woodcoin address</source>
-        <translation>Enviar moedas para um endereço woodcoin</translation>
+        <source>Send coins to a Lotuscoin address</source>
+        <translation>Enviar moedas para um endereço lotuscoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -198,8 +198,8 @@
         <translation>&amp;Verificar mensagem...</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -226,12 +226,12 @@
         <translation>Encriptar as chaves privadas que pertencem à sua carteira</translation>
     </message>
     <message>
-        <source>Sign messages with your Woodcoin addresses to prove you own them</source>
-        <translation>Assine mensagens com os seus endereços Woodcoin para provar que os controla</translation>
+        <source>Sign messages with your Lotuscoin addresses to prove you own them</source>
+        <translation>Assine mensagens com os seus endereços Lotuscoin para provar que os controla</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Woodcoin addresses</source>
-        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Woodcoin especificado</translation>
+        <source>Verify messages to ensure they were signed with specified Lotuscoin addresses</source>
+        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Lotuscoin especificado</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -250,8 +250,8 @@
         <translation>Barra de ferramentas dos separadores</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and woodcoin: URIs)</source>
-        <translation>Solicitar pagamentos (gera códigos QR e woodcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and lotuscoin: URIs)</source>
+        <translation>Solicitar pagamentos (gera códigos QR e lotuscoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -262,16 +262,16 @@
         <translation>Mostrar a lista de rótulos e endereços de receção usados</translation>
     </message>
     <message>
-        <source>Open a woodcoin: URI or payment request</source>
-        <translation>Abrir URI woodcoin: ou pedido de pagamento</translation>
+        <source>Open a lotuscoin: URI or payment request</source>
+        <translation>Abrir URI lotuscoin: ou pedido de pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opções da linha de &amp;comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Woodcoin network</source>
-        <translation><numerusform>%n ligação ativa à rede Woodcoin</numerusform><numerusform>%n ligações ativas à rede Woodcoin</numerusform></translation>
+        <source>%n active connection(s) to Lotuscoin network</source>
+        <translation><numerusform>%n ligação ativa à rede Lotuscoin</numerusform><numerusform>%n ligações ativas à rede Lotuscoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -714,16 +714,16 @@
         <translation>&amp;Gastar troco não confirmado</translation>
     </message>
     <message>
-        <source>Automatically open the Woodcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir a porta do cliente woodcoin automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
+        <source>Automatically open the Lotuscoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir a porta do cliente lotuscoin automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear porta, utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Woodcoin network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede da Woodcoin através dum proxy SOCLS5.</translation>
+        <source>Connect to the Lotuscoin network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede da Lotuscoin através dum proxy SOCLS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -762,8 +762,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Woodcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Ligar à rede Woodcoin através de um proxy SOCKS5 separado para utilizar os serviços ocultos do Tor.</translation>
+        <source>Connect to the Lotuscoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Ligar à rede Lotuscoin através de um proxy SOCKS5 separado para utilizar os serviços ocultos do Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -853,8 +853,8 @@
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Woodcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Woodcoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lotuscoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Lotuscoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -946,8 +946,8 @@
         <translation>Quantia</translation>
     </message>
     <message>
-        <source>Enter a Woodcoin address (e.g. %1)</source>
-        <translation>Entre um endereço Woodcoin (ex. %1)</translation>
+        <source>Enter a Lotuscoin address (e.g. %1)</source>
+        <translation>Entre um endereço Lotuscoin (ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1287,8 +1287,8 @@
         <translation>Reutilizar um endereço de receção existente (não recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Woodcoin network.</source>
-        <translation>Uma mensagem opcional para anexar ao pedido de pagamento, que será exibida quando o pedido for aberto. Nota: A mensagem não será enviada com o pagamento através da rede Woodcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Lotuscoin network.</source>
+        <translation>Uma mensagem opcional para anexar ao pedido de pagamento, que será exibida quando o pedido for aberto. Nota: A mensagem não será enviada com o pagamento através da rede Lotuscoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1444,7 +1444,7 @@
         <translation>total minimo</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for woodcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for lotuscoin transactions than the network can process.</source>
         <translation>Pode pagar somente a taxa minima desde que haja um volume de transações inferior ao espaço nos blocos. No entanto tenha em atenção que esta opção poderá acabar em uma transação nunca confirmada assim que os pedidos de transações excedam a capacidade de processamento da rede.</translation>
     </message>
     <message>
@@ -1531,8 +1531,8 @@
         <translation>Este é um pagamento normal.</translation>
     </message>
     <message>
-        <source>The Woodcoin address to send the payment to</source>
-        <translation>O endereço Woodcoin para enviar o pagamento</translation>
+        <source>The Lotuscoin address to send the payment to</source>
+        <translation>O endereço Lotuscoin para enviar o pagamento</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1551,8 +1551,8 @@
         <translation>Remover esta entrada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less woodcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>A taxa será deduzida ao montante enviado. O destinatário irá receber menos woodcoins do que as que introduziu no campo montante. Caso sejam seleccionados múltiplos destinatários, a taxa será repartida equitativamente.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less lotuscoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>A taxa será deduzida ao montante enviado. O destinatário irá receber menos lotuscoins do que as que introduziu no campo montante. Caso sejam seleccionados múltiplos destinatários, a taxa será repartida equitativamente.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -1575,8 +1575,8 @@
         <translation>Introduza um rótulo para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
-        <source>A message that was attached to the woodcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Woodcoin network.</source>
-        <translation>Uma mensagem que estava anexada ao URI woodcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Woodcoin.</translation>
+        <source>A message that was attached to the lotuscoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lotuscoin network.</source>
+        <translation>Uma mensagem que estava anexada ao URI lotuscoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Lotuscoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1612,12 +1612,12 @@
         <translation>&amp;Assinar Mensagem</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive woodcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive lotuscoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Pode assinar mensagens com os seus endereços para provar que são seus. Tenha atenção ao assinar mensagens ambíguas, pois ataques de phishing podem tentar enganá-lo de modo a assinar a sua identidade para os atacantes. Apenas assine declarações detalhadas com as quais concorde.</translation>
     </message>
     <message>
-        <source>The Woodcoin address to sign the message with</source>
-        <translation>O endereço Woodcoin para designar a mensagem</translation>
+        <source>The Lotuscoin address to sign the message with</source>
+        <translation>O endereço Lotuscoin para designar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1648,8 +1648,8 @@
         <translation>Copiar a assinatura actual para a área de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Woodcoin address</source>
-        <translation>Assine uma mensagem para provar que é dono deste endereço Woodcoin</translation>
+        <source>Sign the message to prove you own this Lotuscoin address</source>
+        <translation>Assine uma mensagem para provar que é dono deste endereço Lotuscoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1672,12 +1672,12 @@
         <translation>Introduza o endereço de assinatura, mensagem (assegure-se que copia quebras de linha, espaços, tabulações, etc. exactamente) e assinatura abaixo para verificar a mensagem. Tenha atenção para não ler mais na assinatura do que o que estiver na mensagem assinada, para evitar ser enganado por um atacante que se encontre entre si e quem assinou a mensagem.</translation>
     </message>
     <message>
-        <source>The Woodcoin address the message was signed with</source>
-        <translation>O endereço Woodcoin com que a mensagem foi designada</translation>
+        <source>The Lotuscoin address the message was signed with</source>
+        <translation>O endereço Lotuscoin com que a mensagem foi designada</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Woodcoin address</source>
-        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Woodcoin especificado</translation>
+        <source>Verify the message to ensure it was signed with the specified Lotuscoin address</source>
+        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Lotuscoin especificado</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1801,8 +1801,8 @@
         <translation>Aceitar ligações externas (padrão: 1 sem -proxy ou -connect)</translation>
     </message>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoin Core</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoin Core</translation>
     </message>
     <message>
         <source>-fallbackfee is set very high! This is the transaction fee you may pay when fee estimates are not available.</source>

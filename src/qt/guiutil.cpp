@@ -132,7 +132,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a Woodcoin address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a Lotuscoin address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
@@ -151,7 +151,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("woodcoin"))
+    if(!uri.isValid() || uri.scheme() != QString("lotuscoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -215,9 +215,9 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("woodcoin://", Qt::CaseInsensitive))
+    if(uri.startsWith("lotuscoin://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 11, "woodcoin:");
+        uri.replace(0, 11, "lotuscoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -225,7 +225,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("woodcoin:%1").arg(info.address);
+    QString ret = QString("lotuscoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -610,10 +610,10 @@ boost::filesystem::path static StartupShortcutPath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "Woodcoin.lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Lotuscoin.lnk";
     if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "Woodcoin (testnet).lnk";
-    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Woodcoin (%s).lnk", chain);
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "Lotuscoin (testnet).lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Lotuscoin (%s).lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -710,8 +710,8 @@ boost::filesystem::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "woodcoin.desktop";
-    return GetAutostartDir() / strprintf("woodcoin-%s.lnk", chain);
+        return GetAutostartDir() / "lotuscoin.desktop";
+    return GetAutostartDir() / strprintf("lotuscoin-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -754,9 +754,9 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
-            optionFile << "Name=Woodcoin\n";
+            optionFile << "Name=Lotuscoin\n";
         else
-            optionFile << strprintf("Name=Woodcoin (%s)\n", chain);
+            optionFile << strprintf("Name=Lotuscoin (%s)\n", chain);
         optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", GetBoolArg("-testnet", false), GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

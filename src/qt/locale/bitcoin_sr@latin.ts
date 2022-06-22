@@ -158,16 +158,16 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Woodcoin address</source>
-        <translation>Pošalji novčiće na Woodcoin adresu</translation>
+        <source>Send coins to a Lotuscoin address</source>
+        <translation>Pošalji novčiće na Lotuscoin adresu</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Proveri poruku...</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -412,8 +412,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoin Core</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoin Core</translation>
     </message>
     <message>
         <source>Information</source>

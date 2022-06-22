@@ -20,17 +20,17 @@ Dependencies
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Woodcoin Core
+Build Lotuscoin Core
 ------------------------
 
-1. Clone the woodcoin source code and cd into `woodcoin`
+1. Clone the lotuscoin source code and cd into `lotuscoin`
 
-        git clone https://github.com/woodcoin-project/woodcoin
-        cd woodcoin
+        git clone https://github.com/lotuscoin-project/lotuscoin
+        cd lotuscoin
 
-2.  Build woodcoin-core:
+2.  Build lotuscoin-core:
 
-    Configure and build the headless woodcoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless lotuscoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -49,37 +49,37 @@ Build Woodcoin Core
 Running
 -------
 
-Woodcoin Core is now available at `./src/woodcoind`
+Lotuscoin Core is now available at `./src/lotuscoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=woodcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Woodcoin/woodcoin.conf"
+    echo -e "rpcuser=lotuscoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Lotuscoin/lotuscoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Woodcoin/woodcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Lotuscoin/lotuscoin.conf"
 
-The first time you run woodcoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run lotuscoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Woodcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Lotuscoin/debug.log
 
 Other commands:
 -------
 
-    ./src/woodcoind -daemon # Starts the woodcoin daemon.
-    ./src/woodcoin-cli --help # Outputs a list of command-line options.
-    ./src/woodcoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/lotuscoind -daemon # Starts the lotuscoin daemon.
+    ./src/lotuscoin-cli --help # Outputs a list of command-line options.
+    ./src/lotuscoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for woodcoin development.
+You can use Qt Creator as an IDE, for lotuscoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "woodcoin-qt" as project name, enter src/qt as location
+4. Enter "lotuscoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

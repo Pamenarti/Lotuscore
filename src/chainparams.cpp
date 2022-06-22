@@ -89,7 +89,7 @@ public:
         consensus.nPowTargetSpacing = 120; // 2 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016  **leaving in woodcoin**
+        consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016  **leaving in lotuscoin**
         consensus.nMinerConfirmationWindow = 30; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
@@ -125,12 +125,12 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0xd508b7916ec00595c1f8e1c767dc3b37392a5e68adf98118bca80a2ed58331d6"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("woodcoin.org", "dnsseed.woodcoin.org"));
-      //  vSeeds.push_back(CDNSSeedData("woodcoinpool.org", "dnsseed.woodcoinpool.org"));
+        vSeeds.push_back(CDNSSeedData("lotuscoin.org", "dnsseed.lotuscoin.org"));
+      //  vSeeds.push_back(CDNSSeedData("lotuscoinpool.org", "dnsseed.lotuscoinpool.org"));
       //  vSeeds.push_back(CDNSSeedData("xurious.com", "dnsseed.ltc.xurious.com"));
       //  vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
       //  vSeeds.push_back(CDNSSeedData("weminemnc.com", "dnsseed.weminemnc.com"));
-      //  vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.woodcoin.loshan.co.uk"));
+      //  vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.lotuscoin.loshan.co.uk"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,73);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -180,7 +180,7 @@ public:
         consensus.nPowTargetSpacing = 120; // 2 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016  **leaving in woodcoin**
+        consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016  **leaving in lotuscoin**
         consensus.nMinerConfirmationWindow = 30; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
@@ -215,7 +215,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("woodcoin.org", "dnsseed.woodcointools.com"));
+        vSeeds.push_back(CDNSSeedData("lotuscoin.org", "dnsseed.lotuscointools.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,135);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,8);

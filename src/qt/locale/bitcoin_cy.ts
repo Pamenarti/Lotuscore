@@ -114,8 +114,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -490,8 +490,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Craidd Woodcoin</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Craidd Lotuscoin</translation>
     </message>
     <message>
         <source>Information</source>

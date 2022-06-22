@@ -146,8 +146,8 @@
         <translation>Пераіндэксацыя блокаў на дыску...</translation>
     </message>
     <message>
-        <source>Send coins to a Woodcoin address</source>
-        <translation>Даслаць манеты на Woodcoin-адрас</translation>
+        <source>Send coins to a Lotuscoin address</source>
+        <translation>Даслаць манеты на Lotuscoin-адрас</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -170,8 +170,8 @@
         <translation>Праверыць паведамленне...</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -198,12 +198,12 @@
         <translation>Зашыфраваць прыватныя ключы, якия належаць вашаму гаманцу</translation>
     </message>
     <message>
-        <source>Sign messages with your Woodcoin addresses to prove you own them</source>
-        <translation>Падпісаць паведамленне з дапамогай Woodcoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Sign messages with your Lotuscoin addresses to prove you own them</source>
+        <translation>Падпісаць паведамленне з дапамогай Lotuscoin-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Woodcoin addresses</source>
-        <translation>Спраўдзіць паведамленне з дапамогай Woodcoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Verify messages to ensure they were signed with specified Lotuscoin addresses</source>
+        <translation>Спраўдзіць паведамленне з дапамогай Lotuscoin-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,8 +218,8 @@
         <translation>Дапамога</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and woodcoin: URIs)</source>
-        <translation>Запатрабаваць плацёж (генеруецца QR-код для Woodcoin URI)</translation>
+        <source>Request payments (generates QR codes and lotuscoin: URIs)</source>
+        <translation>Запатрабаваць плацёж (генеруецца QR-код для Lotuscoin URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -230,16 +230,16 @@
         <translation>Паказаць спіс адрасоў і метак для прымання</translation>
     </message>
     <message>
-        <source>Open a woodcoin: URI or payment request</source>
-        <translation>Адкрыць Woodcoin: URI ці запыт плацяжу</translation>
+        <source>Open a lotuscoin: URI or payment request</source>
+        <translation>Адкрыць Lotuscoin: URI ці запыт плацяжу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Опцыі каманднага радка</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Woodcoin network</source>
-        <translation><numerusform>%n актыўнае злучэнне з сецівам Woodcoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Woodcoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Woodcoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Woodcoin</numerusform></translation>
+        <source>%n active connection(s) to Lotuscoin network</source>
+        <translation><numerusform>%n актыўнае злучэнне з сецівам Lotuscoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Lotuscoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Lotuscoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Lotuscoin</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -736,8 +736,8 @@
         <translation>Запусціць у фоне як дэман і прымаць каманды</translation>
     </message>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoin Core</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoin Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

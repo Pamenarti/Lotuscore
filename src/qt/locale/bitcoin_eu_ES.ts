@@ -103,7 +103,7 @@
     </message>
     <message>
         <source>Show information about Qt</source>
-        <translation>Erakutsi Woodcoin-i buruzko informazioa</translation>
+        <translation>Erakutsi Lotuscoin-i buruzko informazioa</translation>
     </message>
     <message>
         <source>&amp;Options...</source>

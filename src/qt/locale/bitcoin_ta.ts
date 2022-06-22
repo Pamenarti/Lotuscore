@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Woodcoin</source>
-        <translation>Woodcoin</translation>
+        <source>Lotuscoin</source>
+        <translation>Lotuscoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -714,8 +714,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Woodcoin Core</source>
-        <translation>Woodcoin மையம்</translation>
+        <source>Lotuscoin Core</source>
+        <translation>Lotuscoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

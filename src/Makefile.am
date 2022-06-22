@@ -61,11 +61,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += woodcoind
+  bin_PROGRAMS += lotuscoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += woodcoin-cli woodcoin-tx
+  bin_PROGRAMS += lotuscoin-cli lotuscoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -336,16 +336,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-woodcoind_SOURCES = bitcoind.cpp
-woodcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(PIC_FLAGS)
-woodcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
-woodcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+lotuscoind_SOURCES = bitcoind.cpp
+lotuscoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(PIC_FLAGS)
+lotuscoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
+lotuscoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-woodcoind_SOURCES += bitcoind-res.rc
+lotuscoind_SOURCES += bitcoind-res.rc
 endif
 
-woodcoind_LDADD = \
+lotuscoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -357,45 +357,45 @@ woodcoind_LDADD = \
   $(LIBLEVELDB) \
   $(LIBMEMENV) 
 
-woodcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+lotuscoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-woodcoin_cli_SOURCES = bitcoin-cli.cpp
-woodcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-woodcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-woodcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+lotuscoin_cli_SOURCES = bitcoin-cli.cpp
+lotuscoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+lotuscoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lotuscoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-woodcoin_cli_SOURCES += bitcoin-cli-res.rc
+lotuscoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-woodcoin_cli_LDADD = \
+lotuscoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-woodcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+lotuscoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-woodcoin_tx_SOURCES = bitcoin-tx.cpp
-woodcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-woodcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-woodcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+lotuscoin_tx_SOURCES = bitcoin-tx.cpp
+lotuscoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+lotuscoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+lotuscoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-woodcoin_tx_SOURCES += bitcoin-tx-res.rc
+lotuscoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-woodcoin_tx_LDADD = \
+lotuscoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CONSENSUS) \
   $(LIBBITCOIN_CRYPTO) 
 
-woodcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+lotuscoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

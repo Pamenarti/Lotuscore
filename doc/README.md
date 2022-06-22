@@ -1,39 +1,39 @@
-Woodcoin Core 0.13.2
+Lotuscoin Core 0.13.2
 =====================
 
 Setup
 ---------------------
-[Woodcoin Core](http://woodcoin.org/en/download) is the original Woodcoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Woodcoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+[Lotuscoin Core](http://lotuscoin.org/en/download) is the original Lotuscoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Lotuscoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Woodcoin on your native platform.
+The following are some helpful notes on how to run Lotuscoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/woodcoin-qt` (GUI) or
-- `bin/woodcoind` (headless)
+- `bin/lotuscoin-qt` (GUI) or
+- `bin/lotuscoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run woodcoin-qt.exe.
+Unpack the files into a directory, and then run lotuscoin-qt.exe.
 
 ### OS X
 
-Drag Woodcoin-Core to your applications folder, and then run Woodcoin-Core.
+Drag Lotuscoin-Core to your applications folder, and then run Lotuscoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [Woodcoin Wiki](https://woodcoin.info/)
+* See the documentation at the [Lotuscoin Wiki](https://lotuscoin.info/)
 for help and more information.
-* Ask for help on [#woodcoin](http://webchat.freenode.net?channels=woodcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=woodcoin).
-* Ask for help on the [WoodcoinTalk](https://woodcointalk.io/) forums.
+* Ask for help on [#lotuscoin](http://webchat.freenode.net?channels=lotuscoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=lotuscoin).
+* Ask for help on the [LotuscoinTalk](https://lotuscointalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Woodcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Lotuscoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -43,7 +43,7 @@ The following are developer notes on how to build Woodcoin on your native platfo
 
 Development
 ---------------------
-The Woodcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Lotuscoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -60,8 +60,8 @@ The Woodcoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [WoodcoinTalk](https://woodcointalk.io/) forums.
-* Discuss project-specific development on #woodcoin on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=woodcoin).
+* Discuss on the [LotuscoinTalk](https://lotuscointalk.io/) forums.
+* Discuss project-specific development on #lotuscoin on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=lotuscoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
