@@ -13,7 +13,7 @@
  * for both bitcoind and bitcoin-core, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("LotuscoinCore");
+const std::string CLIENT_NAME("Lotus Coin Core Paro V01");
 
 /**
  * Client version number
