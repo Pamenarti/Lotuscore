@@ -4,7 +4,7 @@ NOTE::  This repository is updated for OpenSSL 1.1.
 If your system runs older OpenSSL (run "openssl version" to see)  you will need to 
 revert the changes in the commit for updated Openssl or run the repository at:  
 
-https://github.com/funkshelper/woodcore-openssl-1.0
+https://github.com/Pamenarti/Lotuscore-openssl-1.0
 
 This project is a fully armed and operational bitcoin-core ported to the lotuscoin network.  
 
