@@ -1,1 +1,0 @@
-cmd /c start lotuscoin-qt.exe -addnode=212.64.215.188 -load "MathCS-labMachine1"
