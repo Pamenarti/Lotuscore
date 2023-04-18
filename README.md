@@ -20,5 +20,4 @@ Other clients including Lotuscoin-minimal and Fo-Realz-Lotuscoin are also availa
 
 -------------------
 
-Developer IRC can be found on Freenode at #Lotuscoin-dev and #Lotuscoin.
 
